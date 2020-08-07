@@ -1,2 +1,12 @@
 <script src="{{{uiRootPath}}}/js/site.js"></script>
 <script async src="{{{uiRootPath}}}/js/vendor/highlight.js"></script>
+
+
+{{#if page.attributes.pseudocode}}
+<script type="text/javascript">
+const codes = JSON.parse('{{{page.attributes.pseudocode}}}');
+codes.forEach((item) => {
+ pseudocode.renderElement(document.getElementById(item));
+});
+</script>
+{{/if}}
