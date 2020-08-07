@@ -71,7 +71,7 @@ function loadFile( url, timeout, callback) {
 //         title1:"toto" })
 // see modcover for details
 var cover = function( kv={} ) {
-    svgfile="/_/js/book_cover_simple.svg"
+    svgfile="/_/js/vendor/book_cover_simple.svg"
     loadFile(svgfile, 10000, modcover, kv);
 }
 
