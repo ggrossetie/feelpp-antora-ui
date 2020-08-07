@@ -1,5 +1,6 @@
 image: node:10.14.2-stretch
-stages: [setup, verify, deploy]
+#stages: [setup, verify, deploy]
+stages: [setup, deploy]
 install:
   stage: setup
   cache:
@@ -8,15 +9,15 @@ install:
   script:
   - &npm_install
     npm install --quiet --no-progress --cache=.cache/npm
-lint:
-  stage: verify
-  cache: &pull_cache
-    policy: pull
-    paths:
-    - .cache/npm
-  script:
-  - *npm_install
-  - node_modules/.bin/gulp lint
+#lint:
+#  stage: verify
+#  cache: &pull_cache
+#    policy: pull
+#    paths:
+#    - .cache/npm
+#  script:
+#  - *npm_install
+#  - node_modules/.bin/gulp lint
 bundle-stable:
   stage: deploy
   only:
