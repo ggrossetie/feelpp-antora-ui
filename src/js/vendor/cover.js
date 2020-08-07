@@ -1,3 +1,4 @@
+/*jslint es6, white, browser */
 // Custom cover
 // modify svg tags via key/value object.
 function modcover( kv ) {
@@ -70,7 +71,7 @@ function loadFile( url, timeout, callback) {
 // cover({ bgcolor:"red"
 //         title1:"toto" })
 // see modcover for details
-var cover = function( kv={} ) {
+function cover( kv ) {
     svgfile="/_/js/vendor/book_cover_simple.svg"
     loadFile(svgfile, 10000, modcover, kv);
 }

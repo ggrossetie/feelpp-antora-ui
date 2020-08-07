@@ -1,3 +1,4 @@
+/*jslint es6, white, browser */
 // This file contains all cover specifications per div id.
 // @see docs/docs component.
 

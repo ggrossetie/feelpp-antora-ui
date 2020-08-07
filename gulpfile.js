@@ -18,7 +18,13 @@ const task = require('./gulp.d/tasks')
 const glob = {
   all: [srcDir, previewSrcDir],
   css: `${srcDir}/css/**/*.css`,
-  js: ['gulpfile.js', 'gulp.d/**/*.js', `${srcDir}/{helpers,js}/**/*.js`],
+  js: [
+    'gulpfile.js',
+    'gulp.d/**/*.js',
+    `${srcDir}/{helpers,js}/**/*.js`,
+    `!${srcDir}/js/**/cover*.js`,
+    `!${srcDir}/js/**/visu*.js`,
+  ],
 }
 
 const cleanTask = createTask({
