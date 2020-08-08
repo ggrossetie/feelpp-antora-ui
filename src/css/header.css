@@ -61,6 +61,12 @@ body {
   height: var(--navbar-height);
 }
 
+.navbar-brand .img {
+  vertical-align: top;
+  display: flex;
+  height: 75%;
+}
+
 .navbar-burger {
   color: var(--navbar-font-color);
   background: none;
