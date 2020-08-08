@@ -55,11 +55,12 @@ body {
 }
 
 .navbar-brand {
-  align-items: stretch;
+  align-items: center;
   display: flex;
   flex-shrink: 0;
   height: var(--navbar-height);
 }
+
 
 .navbar-burger {
   color: var(--navbar-font-color);
