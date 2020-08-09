@@ -63,20 +63,7 @@
   --color-border: var(--color-brand-silver);
   --checkbox-border-color: var(--color-brand-gray9);
 
-  /* Color for URL */
-  --color-link: var(--color-brand-blue-secondary);
-  --color-link-active: var(--color-brand-blue-secondary-light);
-  --color-link-hover: var(--color-brand-blue-secondary-extra-light);
-
-  /* --color-border-table: #666; */
-  --color-border-table: #dadada;
-  --color-shade: #f3f3f3;
-  --color-navbar-bg: var(--color-brand-black);
-  --color-navbar-text: var(--color-brand-white);
-  --color-footer-bg: var(--color-shade);
-  --color-footer-bg-gray: var(--color-brand-black);
-  --color-footer-text: var(--color-text);
-
+  
   /* fonts */
   --rem-base: 18; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
   --body-font-size: 1.0625em; /* 17px */
