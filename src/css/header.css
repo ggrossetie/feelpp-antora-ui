@@ -194,7 +194,7 @@ body {
   .search .query {
     width: 235px;
   }
-  
+
   .navbar-brand .navbar-item {
     align-items: center;
     display: flex;
@@ -222,6 +222,7 @@ body {
   .search .query {
     width: 283px;
   }
+
   .navbar,
   .navbar-menu,
   .navbar-end {

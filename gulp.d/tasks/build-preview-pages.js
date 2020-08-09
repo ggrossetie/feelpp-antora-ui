@@ -89,7 +89,7 @@ module.exports = (src, previewSrc, previewDest, sink = () => map()) => (done) =>
               .readFile(ospath.join(src, 'js/vendor/fontawesome-icon-defs.js'), 'utf8')
               .then((contents) => registerIconDefs(iconDefs, { contents }))
               .then(() => writeIconDefs(iconDefs, ospath.join(previewDest, 'fontawesome-icon-defs.js')))
-         )
+          )
         )
         .pipe(vfs.dest(previewDest))
         .on('error', (e) => done)
