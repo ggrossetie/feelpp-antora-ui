@@ -5,6 +5,13 @@ Author Name
 :!example-caption:
 :!table-caption:
 :page-pagination:
+:page-edition: enterprise
+:url-enterprise: http://www.cemosis.fr/math-entreprise/
+:enterprise: {url-enterprise}[ENTERPRISE COLLABORATION]
+:url-multidisciplinary: http://www.cemosis.fr/multi-disciplinary/
+:multidisciplinary: {url-mutidisciplinary}[MULTIDISCIPLINARY COLLABORATION]
+:developer-preview: Developer Preview
+:community: COMMUNITY
 
 image:multirepo-ssg.svg[Multirepo SSG,200,float=right]
 Platonem complectitur mediocritatem ea eos.
@@ -16,6 +23,62 @@ Integer diam enim, dignissim eget eros et, ultricies mattis odio.
 Vestibulum consectetur nec urna a luctus.
 Quisque pharetra tristique arcu fringilla dapibus.
 Curabitur ut massa aliquam, cursus enim et, accumsan lectus.
+
+== Labels for a Section
+
+[.labels]
+[.edition]##{enterprise}##[.status]##{developer-preview}##
+
+To create an edition label, use a span with the role `edition`.
+To create a status label, use a span with the role `status`.
+
+To add edition and status labels at the start of a section or block, place the required spans in a single paragraph on its own.
+To add the "speech bubble tail" above the labels, the spans should be placed in a paragraph with the role `labels`.
+
+Global document attributes are available to insert the content for an edition or status label.
+The global document attribute `&lbrace;enterprise&rbrace;` inserts the content for an enterprise edition label.
+The global document attribute `&lbrace;community&rbrace;` inserts the content for a community edition label.
+
+If you need to place edition and status labels together, do not insert a space between them.
+In this case, you must use the "inline" span markup, i.e. delimit the spans with double hash marks `&num;&num;...&num;&num;`.
+
+== Labels for a Group of Paragraphs within a Section
+
+Here is another section.
+Note that this section does not have any edition or status labels at the start.
+
+****
+[.edition]#{enterprise}#
+
+You can use a sidebar without a title.
+This sidebar shows how you can use the inline label markup in a paragraph on its own to add an edition label or a status label to a collection of blocks which does not form a complete section.
+
+(You should avoid mixing up a section-level labels and block-level labels within one section; it would get too confusing.)
+
+NOTE: Sidebars can contain admonitions.
+
+. Here is a list within the sidebar.
+
+. The edition label at the start of this sidebar clearly applies to the whole content of this sidebar.
+****
+
+Outside the sidebar again.
+The user can clearly see that the edition label within the sidebar does _not_ apply to this paragraph.
+
+== Labels for an Individual Item
+
+Here is another section.
+This section does not have any edition or status labels at the start.
+
+* This is the first item in a list.
+
+* [.edition]#{community}# This is the second item in a list.
+This item is only applicable to community edition.
+
+* This is the third item in the list.
+
+* This is the last item in the list.
+
 
 == Cu solet
 
