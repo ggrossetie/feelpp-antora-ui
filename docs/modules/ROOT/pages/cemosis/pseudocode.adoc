@@ -1,5 +1,5 @@
 = Pseudocode
-
+:page-pseudocode: ["quicksort"]
 
 The documentation embeds some algorithms written using `pseudocode.js` whose syntax is mostly compatible with latex package `algorithmic`.
 
@@ -56,7 +56,7 @@ If you have several pseudo-codes in a page e.g. `code1, code2, code3`, you have 
 ====
 ----
 ++++
-<pre id="code2" style="display:hidden;">
+<pre id="quicksort" style="display:hidden;">
     % This quicksort algorithm is extracted from Chapter 7, Introduction to Algorithms (3rd edition)
     \begin{algorithm}
     \caption{Quicksort}
