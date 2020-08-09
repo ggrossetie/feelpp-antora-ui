@@ -2,6 +2,8 @@
 {{#with page.attributes.content-scripts}}
 {{{this}}}
 {{/with}}
+<script async src="{{#unless preview}}{{{uiRootPath}}}/js/vendor/{{/unless}}fontawesome-icon-defs.js"></script>
+<script async src="{{{uiRootPath}}}/js/vendor/fontawesome.js"></script>
 <script async src="{{{uiRootPath}}}/js/vendor/highlight.js"></script>
 
 {{#if env.ALGOLIA_API_KEY}}

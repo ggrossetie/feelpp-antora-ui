@@ -42,10 +42,12 @@
           </div>
         </div>
         {{#if env.ALGOLIA_API_KEY}}
+        <div class="primary-action">
             <form class="navbar-item search">
-              <input type="text" placeholder="Search {{{site.name}}}" class="query" id="search-query">
-              <button type="button" class="search"><span>Search</span></button>
+              <input type="text" placeholder="Search {{{site.title}}}" class="query" id="search-query">
+              <button type="button" class="search-btn"><i class="fas fa-search"></i></button>
             </form>
+        </div>
         {{/if}}
         <div class="navbar-item">
           <a class="navbar-brand" href="https://join.slack.com/t/feelpp/shared_invite/zt-2qe0q9hw-4pVbhohCXUE6Po9Ma8dbiQ">
