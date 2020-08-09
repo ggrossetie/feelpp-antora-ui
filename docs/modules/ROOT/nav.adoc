@@ -11,3 +11,6 @@
 ** xref:list-styles.adoc[Lists]
 ** xref:sidebar-styles.adoc[Sidebars]
 ** xref:ui-macro-styles.adoc[UI Macros]
+* Cemosis Extensions
+** xref:cemosis/pseudocode.adoc[Pseudocode]
+** xref:cemosis/plotly.adoc[Plot.ly]
