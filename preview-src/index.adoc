@@ -117,6 +117,15 @@ This is an example paragraph.
 
 How about some code?
 
+some cpp
+[source,cpp]
+----
+auto g = []( int i ){ std::cout << i << std::endl; }; 
+// call
+g ( 10 );
+----
+
+some js 
 [source,js]
 ----
 vfs

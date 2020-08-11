@@ -60,6 +60,7 @@
   --color-muted: var(--color-brand-gray);
   --color-text: #333;
   --color-code: var(--color-brand-pink);
+  --color-background-hljs: #282c34;
   --color-border: var(--color-brand-silver);
   --checkbox-border-color: var(--color-brand-gray9);
 
@@ -157,6 +158,7 @@
   --example-border-color: var(--color-gray-70);
   --kbd-background: var(--panel-background);
   --kbd-border-color: var(--color-gray-10);
+  --pre-background-hljs: var(--color-background-hljs);
   --pre-background: var(--panel-background);
   --pre-border-color: var(--panel-border-color);
   --pre-annotation-font-color: var(--color-gray-10);

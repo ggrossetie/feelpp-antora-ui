@@ -21,7 +21,7 @@
   hljs.registerLanguage('kotlin', require('highlight.js/lib/languages/kotlin'))
   hljs.registerLanguage('makefile', require('highlight.js/lib/languages/makefile'))
   hljs.registerLanguage('markdown', require('highlight.js/lib/languages/markdown'))
-  hljs.registerLanguage('matlab', require('highlight.js/lib/languages/matlab'))  
+  hljs.registerLanguage('matlab', require('highlight.js/lib/languages/matlab'))
   hljs.registerLanguage('nix', require('highlight.js/lib/languages/nix'))
   hljs.registerLanguage('objectivec', require('highlight.js/lib/languages/objectivec'))
   hljs.registerLanguage('perl', require('highlight.js/lib/languages/perl'))
