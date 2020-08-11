@@ -190,6 +190,18 @@
   --toc-width--widescreen: calc(216 / var(--rem-base) * 1rem);
   --doc-max-width: calc(720 / var(--rem-base) * 1rem);
   --doc-max-width--desktop: calc(828 / var(--rem-base) * 1rem);
+
+  /* Spacing variables */
+  --base-space: 1rem; /* ~ 16px */
+  --base-small-space: 0.75rem; /* ~ 12px */
+  --base-extra-small-space: 0.5rem; /* ~ 8px */
+  --base-medium-space: 1.5rem; /* ~ 24px */
+  --base-large-space: 2rem; /* ~ 32px */
+  --base-extra-large-space: 2.5rem; /* ~ 40px */
+  --column-space: 2.5rem; /* ~ 40px */
+  --admonition-icon-space: 1rem; /* ~ 16px */
+  --admonition-content-space: 1rem; /* ~ 16px */
+
   /* stacking */
   --z-index-nav: 1;
   --z-index-toolbar: 2;

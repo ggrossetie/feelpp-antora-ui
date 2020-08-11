@@ -511,7 +511,15 @@
   border-radius: 0.75rem;
   display: block;
   overflow-x: auto;
+  /*
   padding: 0.75rem;
+  */
+  /* needed to override third-party styles */
+  padding-left: var(--base-space);
+  padding-right: var(--base-small-space);
+  padding-top: var(--base-large-space);
+  padding-bottom: var(--base-large-space);
+  white-space: pre-wrap;
 }
 
 /* NOTE assume pre.highlight contains code[data-lang] */
@@ -534,6 +542,11 @@
 
 .doc .listingblock:hover code[data-lang]::before {
   display: block;
+}
+
+table.tableblock code.language-console.hljs.shell,
+table.tableblock pre code.language-bash.hljs {
+  white-space: normal;
 }
 
 .doc .dlist dt {
