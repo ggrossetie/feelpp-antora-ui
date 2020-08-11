@@ -4,13 +4,16 @@
 
 
 
-{{#if page.attributes.feelpp_book_cover}}
+{{#if page.attributes.cover}}
     <script src="{{uiRootPath}}/js/vendor/cover.js"></script>
     <script src="{{uiRootPath}}/js/vendor/cover_custom.js"></script>
 {{/if}}
 
 {{#if page.attributes.vtkjs}}
-    <script type="text/javascript" src="/_/js/vendor/visu-vtk.js"></script>
+    <script type="text/javascript" src="{{uiRootPath}}/js/vendor/visu-vtk.js"></script>
+{{/if}}
+{{#if page.attributes.viewer}}
+    <script type="text/javascript" src="{{uiRootPath}}/js/vendor/Viewer.js"></script>
 {{/if}}
 
 {{#if page.attributes.plotly}}
