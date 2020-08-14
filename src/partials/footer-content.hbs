@@ -1,6 +1,8 @@
 <footer class="footer">
   <div class="container">
+    {{#if (or (eq site.url 'https://docs.feelpp.org') (eq site.url 'https://docs.cemosis.fr'))}}
     <div class="sharethis-inline-share-buttons"></div>
+    {{/if}}
     <div class="footer-links">
       <div class="col">
         <div class="footer-logo">
