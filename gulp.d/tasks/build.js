@@ -100,7 +100,7 @@ module.exports = (src, dest, preview) => () => {
       .pipe(postcss((file) => ({ plugins: postcssPlugins, options: { file } }))),
     vfs.src('font/*.{ttf,woff*(2)}', opts),
     vfs
-      .src('img/**/*.{gif,ico,jpg,png,svg}', opts)
+      .src(['img/**/*.{gif,ico,jpg,png,svg}', '!img/book_cover_simple.svg'], opts)
       .pipe(
         imagemin(
           [
@@ -111,6 +111,7 @@ module.exports = (src, dest, preview) => () => {
           ].reduce((accum, it) => (it ? accum.concat(it) : accum), [])
         )
       ),
+    vfs.src('img/book_cover_simple.svg', opts),
     vfs.src('helpers/*.js', opts),
     vfs.src('layouts/*.hbs', opts),
     vfs.src('partials/*.hbs', opts)
