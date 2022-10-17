@@ -93,6 +93,7 @@ button::-moz-focus-inner {
   border: none;
   padding: 0;
 }
+
 .container,
 .container-fluid {
   margin: 0 auto;
@@ -417,6 +418,7 @@ label::after {
     margin-bottom: var(--base-large-space) !important;   /* 32px */
   }
 }
+
 summary {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
