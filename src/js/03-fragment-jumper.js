@@ -1,6 +1,8 @@
 ;(function () {
   'use strict'
 
+  var ie = /*@cc_on!@*/false || !!document.documentMode
+  if (!ie) return
   var article = document.querySelector('article.doc')
   var toolbar = document.querySelector('.toolbar')
 
@@ -9,15 +11,12 @@
   }
 
   function computePosition (el, sum) {
-    if (article.contains(el)) {
-      return computePosition(el.offsetParent, el.offsetTop + sum)
-    } else {
-      return sum
-    }
+    return article.contains(el) ? computePosition(el.offsetParent, el.offsetTop + sum) : sum
   }
 
   function jumpToAnchor (e) {
     if (e) {
+      if (e.altKey || e.ctrlKey) return
       window.location.hash = '#' + this.id
       e.preventDefault()
     }
