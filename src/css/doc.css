@@ -764,7 +764,7 @@
   padding-top: var(--base-large-space);
   padding-bottom: var(--base-large-space);
   white-space: pre-wrap;
-  /*padding: 0.875em;*/
+  /* padding: 0.875em; */
 }
 
 .doc .listingblock > .content {

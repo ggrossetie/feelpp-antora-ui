@@ -71,12 +71,14 @@ body {
   pointer-events: all !important;
 }
 
-/*.navbar-brand {
+/*
+navbar-brand {
   align-items: center;
   display: flex;
   flex-shrink: 0;
   height: var(--navbar-height);
-}*/
+} 
+*/
 
 #search-input:disabled::placeholder {
   color: #4c4c4c;
