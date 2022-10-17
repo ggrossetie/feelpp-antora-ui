@@ -49,7 +49,7 @@ module.exports = (src, previewSrc, previewDest, sink = () => map()) => (done) =>
       extensions.forEach((request) => require(request).register())
       return [{ ...baseUiModel, env: process.env }, layouts]
     })
-    .then(([baseUiModel, layouts]) =>
+    .then(([baseUiModel, layouts, iconDefs = new Map()]) =>
       vfs
         .src('**/*.adoc', { base: previewSrc, cwd: previewSrc })
         .pipe(
