@@ -61,7 +61,7 @@
   --color-muted: var(--color-brand-gray);
   --color-text: #333;
   --color-code: var(--color-brand-pink);
-  --color-background-hljs: #282c34;
+  --color-background-hljs: #16191d;
   --color-border: var(--color-brand-silver);
   --checkbox-border-color: var(--color-brand-gray9);
 
@@ -158,7 +158,7 @@
   --kbd-background: var(--panel-background);
   --kbd-border-color: var(--color-gray-10);
   --pre-background-hljs: var(--color-background-hljs);
-  --pre-background: var(--panel-background);
+  --pre-background: var(--color-black);
   --pre-border-color: var(--panel-border-color);
   --pre-annotation-font-color: var(--color-gray-50);
   --quote-background: var(--panel-background);

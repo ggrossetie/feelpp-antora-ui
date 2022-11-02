@@ -4,7 +4,7 @@
   hyphens: auto;
   line-height: var(--doc-line-height);
   margin: var(--doc-margin);
-  /* max-width: var(--doc-max-width); */
+  max-width: var(--doc-max-width);
   padding: 0 1rem 4rem;
 }
 
@@ -13,7 +13,7 @@
     flex: auto;
     font-size: var(--doc-font-size--desktop);
     margin: var(--doc-margin--desktop);
-    /* max-width: var(--doc-max-width--desktop); */
+    max-width: var(--doc-max-width--desktop);
     min-width: 0;
   }
 }
@@ -40,9 +40,11 @@
   margin: 1.5rem 0;
 }
 
+/* 
 .doc h1.page + .labels {
   display: inline-block;
 }
+*/
 
 @media screen and (min-width: 769px) {
   .doc > h1.page:first-child {
@@ -755,16 +757,7 @@
   border-radius: 0.75rem;
   display: block;
   overflow-x: auto;
-  /*
-  padding: 0.75rem;
-  */
-  /* needed to override third-party styles */
-  padding-left: var(--base-space);
-  padding-right: var(--base-small-space);
-  padding-top: var(--base-large-space);
-  padding-bottom: var(--base-large-space);
-  white-space: pre-wrap;
-  /* padding: 0.875em; */
+  padding: 0.875em;
 }
 
 .doc .listingblock > .content {
