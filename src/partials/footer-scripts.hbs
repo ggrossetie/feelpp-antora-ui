@@ -3,6 +3,7 @@
 {{#with page.attributes.content-scripts}}
 {{{this}}}
 {{/with}}
+
 <script async src="{{#unless preview}}{{{uiRootPath}}}/js/vendor/{{/unless}}fontawesome-icon-defs.js"></script>
 <script async src="{{{uiRootPath}}}/js/vendor/fontawesome.js"></script>
 <script async src="{{{uiRootPath}}}/js/vendor/highlight.js"></script>
@@ -22,3 +23,20 @@ codes.forEach((item) => {
 });
 </script>
 {{/if}}
+
+<script type="text/javascript">
+function toggleFullScreen() {
+   var doc = window.document;
+   var docEl = doc.documentElement;
+
+   var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+   var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+
+   if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+       requestFullScreen.call(docEl);
+   }
+   else {
+       cancelFullScreen.call(doc);
+   }
+}
+</script>
