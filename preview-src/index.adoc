@@ -1,7 +1,7 @@
 = Hardware and Software Requirements
 Author Name
 :idprefix:
-:page-jupyter: ../attachements/sensor/index.ipynb
+:page-jupyter: 
 :idseparator: -
 :!example-caption:
 :!table-caption:
