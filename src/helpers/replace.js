@@ -1,5 +1,6 @@
 'use strict'
-var util = require('handlebars-utils');
+
+var util = require('handlebars-utils')
 
 /**
  * Replace all occurrences of substring `a` with substring `b`.
@@ -16,8 +17,8 @@ var util = require('handlebars-utils');
  */
 
 module.exports = (str, a, b) => {
-  if (!util.isString(str)) return '';
-  if (!util.isString(a)) return str;
-  if (!util.isString(b)) b = '';
-  return str.split(a).join(b);
-};
+  if (!util.isString(str)) return ''
+  if (!util.isString(a)) return str
+  if (!util.isString(b)) b = ''
+  return str.split(a).join(b)
+}
