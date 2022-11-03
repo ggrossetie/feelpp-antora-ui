@@ -6,13 +6,13 @@
 
 {{#if page.attributes.jupyter}}    
 
-        <a href="{{page.attributes.jupyter}}">
+        <a href="{{page.attributes.jupyter}}" title="Download Jupyter Notebook" data-toggle="tooltip" data-placement="left">
          .ipynb <i class="fas fa-file"></i>
         </a>
 
 {{/if}}
 
-          <a onclick="print(this)"  class="headerbtn"  data-toggle="tooltip"data-placement="left" title="Print to PDF">
+          <a onclick="print(this)"  class="headerbtn"  data-toggle="tooltip" data-placement="left" title="Print to PDF">
               .pdf <i class="fas fa-file-pdf"></i>
           </a>
 
