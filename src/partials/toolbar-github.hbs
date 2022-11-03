@@ -4,7 +4,7 @@
   </button>
   <div class="dropdown-content">
 
-    <a href="{{ page.attributes.origin-url }}">Open repository <i class="fab fa-github"></i></a>
+    <a href="{{ page.origin.url }}">Open repository <i class="fab fa-github"></i></a>
     
 {{#if (and page.fileUri (not env.CI))}}
   <a href="{{page.editUrl}}">Edit this Page <i class="fas fa-edit"></i></a>
