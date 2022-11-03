@@ -62,7 +62,8 @@
     "stylelint": "~13.3",
     "stylelint-config-standard": "~20.0",
     "vinyl-buffer": "~1.0",
-    "vinyl-fs": "~3.0"
+    "vinyl-fs": "~3.0",
+    "handlebars-utils": "^1.0.6"
   },
   "optionalDependencies": {
     "@fortawesome/pro-regular-svg-icons": "~5.13",
