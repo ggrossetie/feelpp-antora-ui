@@ -4,9 +4,9 @@
   </button>
   <div class="dropdown-content">
 
-{{#if page.attributes.jupyter}}    
-        {{ log page }}
-        <a href="{{page.attributes.jupyter}}" title="Download Jupyter Notebook" data-toggle="tooltip" data-placement="left">
+{{#if page.attributes.jupyter}}
+
+        <a href="{{relativize (resolveResourceURL (replace (join 'attachment$' page.relativeSrcPath) '.adoc' '.ipynb'))}}" title="Download Jupyter Notebook" data-toggle="tooltip" data-placement="left">
          .ipynb <i class="fas fa-file"></i>
         </a>
 
