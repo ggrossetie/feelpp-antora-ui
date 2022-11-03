@@ -101,7 +101,7 @@ module.exports = (src, dest, preview) => () => {
           } else if (file.relative === 'js/vendor/fontawesome-icon-defs.js') {
             file.contents = Buffer.from(populateIconDefs(require(file.path)))
             next(null, file)
-          }  else {
+          } else {
             fs.readFile(file.path, 'UTF-8').then((contents) => {
               file.contents = Buffer.from(contents)
               next(null, file)
