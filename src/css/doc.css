@@ -745,7 +745,6 @@
 .doc .tableblock pre,
 .doc .listingblock.wrap pre {
   white-space: pre-wrap;
-  
 }
 
 .doc pre.highlight code,
