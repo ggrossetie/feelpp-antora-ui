@@ -1,30 +1,52 @@
 ;(function () {
   'use strict'
-
   // NOTE: v4-shims required to support the output of icon macro generated from AsciiDoc content
   require('@fortawesome/fontawesome-free/js/v4-shims')
-  var fa = require('@fortawesome/fontawesome-svg-core')
+  const fa = require('@fortawesome/fontawesome-svg-core')
+  const admonitionIcons = {
+    caution: {
+      prefix: 'fas',
+      iconName: 'fire',
+    },
+    important: {
+      prefix: 'fas',
+      iconName: 'exclamation-circle',
+    },
+    warning: {
+      prefix: 'fas',
+      iconName: 'exclamation-triangle',
+    },
+    note: {
+      prefix: 'fas',
+      iconName: 'info-circle',
+    },
+    tip: {
+      prefix: 'fas',
+      iconName: 'lightbulb',
+    },
+  }
+  fa.library.add(window.FontAwesomeIconDefs)
 
-  Object.assign(fa.config, {
-    autoReplaceSvg: 'nest',
-    keepOriginalSource: false,
-    observeMutations: false,
-    replacementClass: 'svga',
-  })
-
-  var iconDefs = window.FontAwesomeIconDefs || []
-  iconDefs.forEach(function (iconDef) {
-    fa.library.add(iconDef)
-  })
-
-  var admonitionIcons = iconDefs.admonitionIcons || {}
-  ;[].slice.call(document.querySelectorAll('td.icon > i.fa')).forEach(function (i) {
-    var name = i.className.substr(8)
-    i.className = admonitionIcons[name] || 'fas fa-' + name
+  Array.from(document.querySelectorAll('td.icon > i')).forEach(function (el) {
+    const iconClassName = Array.from(el.classList).find((name) => name.startsWith('icon-'))
+    if (iconClassName) {
+      const admonitionType = iconClassName.replace('icon-', '')
+      const icon = admonitionIcons[admonitionType]
+      if (icon) {
+        const iconElement = document.createElement('i')
+        let style = 'solid'
+        if (icon.prefix === 'far') {
+          style = 'regular'
+        } else if (icon.prefix === 'fab') {
+          style = 'brand'
+        }
+        iconElement.className = `fa-${style} fa-${icon.iconName}`
+        el.parentNode.insertBefore(iconElement, el)
+      }
+    }
   })
 
   fa.dom.i2svg()
 
-  delete window.___FONT_AWESOME___
   delete window.FontAwesomeIconDefs
 })()

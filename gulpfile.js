@@ -22,9 +22,7 @@ const glob = {
     'gulpfile.js',
     'gulp.d/**/*.js',
     `${srcDir}/{helpers,js}/**/*.js`,
-    `!${srcDir}/js/**/cover*.js`,
-    `!${srcDir}/js/**/tabs*.js`,
-    `!${srcDir}/js/**/visu*.js`,
+    `!${srcDir}/js/vendor/**.js`,
   ],
 }
 
