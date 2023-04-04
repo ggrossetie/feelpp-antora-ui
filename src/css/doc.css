@@ -337,6 +337,7 @@
 
 .doc .admonitionblock {
   margin: 1.4rem 0 0;
+  border-left: 2px solid;
 }
 
 .doc .admonitionblock p,
@@ -357,52 +358,77 @@
   table-layout: fixed;
   position: relative;
   width: 100%;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05), 0 0 0.0625rem rgba(0, 0, 0, 0.1);
+}
+
+.doc .admonitionblock > table > tbody > tr {
+  display: grid;
 }
 
 .doc .admonitionblock td.content {
   padding: 1rem 1rem 0.75rem;
-  background: var(--admonition-background);
+  background: var(--color-white);
   width: 100%;
   word-wrap: anywhere;
 }
 
 .doc .admonitionblock .icon {
-  position: absolute;
-  top: 0;
-  left: 0;
+  grid-row: 1;
+  width: 100%;
   font-size: calc(15 / var(--rem-base) * 1rem);
-  padding: 0 0.5rem;
-  height: 1.25rem;
-  line-height: 1;
+  padding: 0.5rem;
   font-weight: var(--admonition-label-font-weight);
   text-transform: uppercase;
-  border-radius: 0.45rem;
-  transform: translate(-0.5rem, -50%);
+}
+
+.doc .admonitionblock .icon > svg {
+  /* padding between FontAwesome icon and text */
+  padding-right: 0.35em;
 }
 
 .doc .admonitionblock.caution .icon {
-  background-color: var(--caution-color);
+  background-color: var(--caution-background);
   color: var(--caution-on-color);
 }
 
 .doc .admonitionblock.important .icon {
-  background-color: var(--important-color);
+  background-color: var(--important-background);
   color: var(--important-on-color);
 }
 
 .doc .admonitionblock.note .icon {
-  background-color: var(--note-color);
+  background-color: var(--note-background);
   color: var(--note-on-color);
 }
 
 .doc .admonitionblock.tip .icon {
-  background-color: var(--tip-color);
+  background-color: var(--tip-background);
   color: var(--tip-on-color);
 }
 
 .doc .admonitionblock.warning .icon {
-  background-color: var(--warning-color);
+  background-color: var(--warning-background);
   color: var(--warning-on-color);
+}
+
+.doc .admonitionblock.caution {
+  border-left-color: var(--caution-color);
+}
+
+.doc .admonitionblock.important {
+  border-left-color: var(--important-color);
+}
+
+.doc .admonitionblock.tip {
+  border-left-color: var(--tip-color);
+}
+
+.doc .admonitionblock.note {
+  border-left-color: var(--note-color);
+}
+
+.doc .admonitionblock.warning {
+  border-left-color: var(--warning-color);
 }
 
 .doc .admonitionblock .icon i {
