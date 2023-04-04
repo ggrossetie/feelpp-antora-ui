@@ -380,6 +380,11 @@
   transform: translate(-0.5rem, -50%);
 }
 
+.doc .admonitionblock .icon > svg {
+  /* padding between FontAwesome icon and text */
+  padding-right: 0.35em;
+}
+
 .doc .admonitionblock.caution .icon {
   background-color: var(--caution-color);
   color: var(--caution-on-color);

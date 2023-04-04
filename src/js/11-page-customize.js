@@ -8,7 +8,9 @@
   // add fa placeholder for heading anchors
   ;[].slice.call(document.querySelectorAll('a.anchor')).forEach(function (a) {
     if (!/^H[1-6]$/.test(a.parentNode.tagName)) return
-    a.appendChild(document.createElement('i')).className = 'fas fa-link'
+    const iconNode = document.createElement('i')
+    iconNode.classList.add('fa-solid', 'fa-link')
+    a.appendChild(iconNode)
   })
   // for label edition/statuses
   ;[].slice.call(document.querySelectorAll('.edition a')).forEach(function (a) {

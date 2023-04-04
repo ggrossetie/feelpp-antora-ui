@@ -27,6 +27,15 @@ body {
   padding-left: 1rem;
 }
 
+.navbar-brand .cemosis-logo {
+  max-height: 2em;
+}
+
+.navbar-brand .slack-logo {
+  /* slightly smaller */
+  max-height: 1.5em;
+}
+
 .navbar-brand .navbar-item {
   color: var(--navbar-font-color);
 }
