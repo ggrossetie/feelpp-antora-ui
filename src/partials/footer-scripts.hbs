@@ -6,21 +6,12 @@
 
 <script async src="{{{uiRootPath}}}/js/vendor/fontawesome-icon-defs.js"></script>
 <script async src="{{{uiRootPath}}}/js/vendor/fontawesome.js"></script>
-<script async src="{{{uiRootPath}}}/js/vendor/highlight.js"></script>
+<!--script async src="{{{uiRootPath}}}/js/vendor/highlight.js"></script-->
 
 {{#if env.ALGOLIA_API_KEY}}
 <script async id="search-script" src="{{{uiRootPath}}}/js/vendor/docsearch.js"
   {{~#if env.ALGOLIA_APP_ID}} data-app-id="{{env.ALGOLIA_APP_ID}}" {{/if~}}
   data-api-key="{{env.ALGOLIA_API_KEY}}" data-index-name="{{env.ALGOLIA_INDEX_NAME}}" data-stylesheet="{{{uiRootPath}}}/css/vendor/docsearch.css">
-</script>
-{{/if}}
-
-{{#if page.attributes.pseudocode}}
-<script type="text/javascript">
-const codes = JSON.parse('{{{page.attributes.pseudocode}}}');
-codes.forEach((item) => {
- pseudocode.renderElement(document.getElementById(item));
-});
 </script>
 {{/if}}
 
@@ -39,4 +30,56 @@ function toggleFullScreen() {
        cancelFullScreen.call(doc);
    }
 }
+</script>
+<script type="module">
+  import React from 'https://esm.sh/react@18.2.0'
+  import ReactDOM from 'https://esm.sh/react-dom@18.2.0'
+  import ReactJson from 'https://esm.sh/react-json-view@1.21.3'
+  import json5 from 'https://esm.sh/json5@2.2.3'
+  import ini from 'https://esm.sh/ini@4.0.0'
+
+  const r = ini.parse(`directory=applications/models/aerothermics/ThermalBuilding/2d
+
+case.dimension=2
+
+[heat-fluid]
+mesh.filename=$cfgdir/aero.geo
+gmsh.hsize=0.025#0.01#0.02#0.07#0.1
+filename=$cfgdir/aero.json
+
+use-natural-convection=1
+Boussinesq.ref-temperature=280#293.15
+
+snes-monitor=1
+pc-type=lu
+ksp-type=preonly
+
+[heat-fluid.heat]
+initial-solution.temperature=280#293.15
+bdf.order=2
+
+[heat-fluid.fluid]
+#solver=Newton #Oseen,Picard,Newton
+
+define-pressure-cst=1
+define-pressure-cst.method=algebraic#penalisation#algebraic
+define-pressure-cst.markers=air1,air2
+
+bdf.order=2
+
+[ts]
+time-step=50#10
+time-final=15000
+#restart=true
+restart.at-last-save=true
+#time-initial=0.0002
+#save.freq=2
+file-format=hdf5`)
+  const result = JSON.parse(JSON.stringify(r))
+
+  const text = document.querySelector('#wc code').textContent
+  const value = json5.parse(text)
+
+  const root = ReactDOM.createRoot(document.getElementById('rjv'));
+  root.render(React.createElement(ReactJson, {src: result, name: null, collapsed: 2, displayDataTypes: false}, null));
 </script>
