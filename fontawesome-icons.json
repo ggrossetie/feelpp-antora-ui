@@ -82,5 +82,9 @@
   {
     "prefix": "fab",
     "iconName": "twitter"
+  },
+  {
+    "prefix": "fas",
+    "iconName": "search"
   }
 ]

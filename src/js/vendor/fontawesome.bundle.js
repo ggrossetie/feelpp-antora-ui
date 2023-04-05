@@ -27,19 +27,22 @@
   }
   fa.library.add(window.FontAwesomeIconDefs)
 
-  ;[].slice.call(document.querySelectorAll('td.icon > i')).forEach(function (el) {
-    const admonitionType = el.className.replace('icon-', '')
-    const icon = admonitionIcons[admonitionType]
-    if (icon) {
-      const iconElement = document.createElement('i')
-      let style = 'solid'
-      if (icon.prefix === 'far') {
-        style = 'regular'
-      } else if (icon.prefix === 'fab') {
-        style = 'brand'
+  Array.from(document.querySelectorAll('td.icon > i')).forEach(function (el) {
+    const iconClassName = Array.from(el.classList).find((name) => name.startsWith('icon-'))
+    if (iconClassName) {
+      const admonitionType = iconClassName.replace('icon-', '')
+      const icon = admonitionIcons[admonitionType]
+      if (icon) {
+        const iconElement = document.createElement('i')
+        let style = 'solid'
+        if (icon.prefix === 'far') {
+          style = 'regular'
+        } else if (icon.prefix === 'fab') {
+          style = 'brand'
+        }
+        iconElement.className = `fa-${style} fa-${icon.iconName}`
+        el.parentNode.insertBefore(iconElement, el)
       }
-      iconElement.className = `fa-${style} fa-${icon.iconName}`
-      el.parentNode.insertBefore(iconElement, el)
     }
   })
 

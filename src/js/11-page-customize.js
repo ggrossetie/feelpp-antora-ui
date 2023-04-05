@@ -1,16 +1,10 @@
 ;(function () {
   'use strict'
   // hide admonition icons from Font Awesome i2svg
-  // FIXME: eventually we want to add the right prefix so that these icons get loaded from Font Awesome
+  // FIXME: eventually we want to add the right prefix
+  // so that these icons get correctly loaded from FontAwesome directly
   ;[].slice.call(document.querySelectorAll('td.icon > i.fa')).forEach(function (el) {
     el.classList.remove('fa')
-  })
-  // add fa placeholder for heading anchors
-  ;[].slice.call(document.querySelectorAll('a.anchor')).forEach(function (a) {
-    if (!/^H[1-6]$/.test(a.parentNode.tagName)) return
-    const iconNode = document.createElement('i')
-    iconNode.classList.add('fa-solid', 'fa-link')
-    a.appendChild(iconNode)
   })
   // for label edition/statuses
   ;[].slice.call(document.querySelectorAll('.edition a')).forEach(function (a) {
