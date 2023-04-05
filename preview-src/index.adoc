@@ -1,7 +1,7 @@
 = Hardware and Software Requirements
 Author Name
 :idprefix:
-:page-jupyter: 
+:page-jupyter:
 :idseparator: -
 :!example-caption:
 :!table-caption:
@@ -147,12 +147,12 @@ How about some code?
 some cpp
 [source,cpp]
 ----
-auto g = []( int i ){ std::cout << i << std::endl; }; 
+auto g = []( int i ){ std::cout << i << std::endl; };
 // call
 g ( 10 );
 ----
 
-some js 
+some js
 [source,js]
 ----
 vfs
