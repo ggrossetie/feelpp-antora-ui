@@ -17,11 +17,11 @@
     "@asciidoctor/core": "~2.2",
     "@fontsource/roboto": "~4.5",
     "@fontsource/roboto-mono": "~4.5",
-    "@fortawesome/fontawesome-free": "~5.15",
-    "@fortawesome/fontawesome-svg-core": "~1.2",
-    "@fortawesome/free-brands-svg-icons": "~5.15",
-    "@fortawesome/free-regular-svg-icons": "~5.15",
-    "@fortawesome/free-solid-svg-icons": "~5.15",
+    "@fortawesome/fontawesome-free": "~6.4",
+    "@fortawesome/fontawesome-svg-core": "~6.4",
+    "@fortawesome/free-brands-svg-icons": "~6.4",
+    "@fortawesome/free-regular-svg-icons": "~6.4",
+    "@fortawesome/free-solid-svg-icons": "~6.4",
     "@octokit/rest": "~18.0",
     "asciidoctor-jupyter": "0.3.0",
     "asciidoctor.js": "1.5.9",
@@ -49,6 +49,7 @@
     "gulp-uglify": "~3.0",
     "gulp-vinyl-zip": "~2.2",
     "handlebars": "~4.7",
+    "handlebars-utils": "^1.0.6",
     "highlight.js": "9.18.3",
     "js-yaml": "~3.13",
     "merge-stream": "~2.0",
@@ -62,14 +63,18 @@
     "stylelint": "~13.3",
     "stylelint-config-standard": "~20.0",
     "vinyl-buffer": "~1.0",
-    "vinyl-fs": "~3.0",
-    "handlebars-utils": "^1.0.6"
+    "vinyl-fs": "~3.0"
   },
   "optionalDependencies": {
     "@fortawesome/pro-regular-svg-icons": "~5.13",
     "@fortawesome/pro-solid-svg-icons": "~5.13"
   },
-  "dependencies": {
-    "gulp-cli": "^2.3.0"
+  "scripts": {
+    "start": "npm run generate-fontawesome-icon-defs && LIVERELOAD=true gulp preview",
+    "lint": "npm run lint:css && npm run lint:js",
+    "lint:css": "stylelint \"src/css/**/*.css\"",
+    "lint:js": "eslint gulpfile.js \"gulp.d/**/*.js\" \"src/{helpers,js}/**/*.js\"",
+    "build": "npm run generate-fontawesome-icon-defs && gulp bundle",
+    "generate-fontawesome-icon-defs": "node tasks/generate-fontawesome-icon-defs.js"
   }
 }

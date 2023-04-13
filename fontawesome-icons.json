@@ -1,0 +1,90 @@
+[
+  {
+    "prefix": "fas",
+    "iconName": "fire"
+  },
+  {
+    "prefix": "fas",
+    "iconName": "exclamation-circle"
+  },
+  {
+    "prefix": "fas",
+    "iconName": "exclamation-triangle"
+  },
+  {
+    "prefix": "fas",
+    "iconName": "info-circle"
+  },
+  {
+    "prefix": "fas",
+    "iconName": "lightbulb"
+  },
+  {
+    "prefix": "fas",
+    "iconName": "link"
+  },
+  {
+    "prefix": "fas",
+    "iconName": "link"
+  },
+  {
+    "prefix": "fas",
+    "iconName": "link"
+  },
+  {
+    "prefix": "fas",
+    "iconName": "link"
+  },
+  {
+    "prefix": "fas",
+    "iconName": "link"
+  },
+  {
+    "prefix": "fas",
+    "iconName": "angle-right"
+  },
+  {
+    "prefix": "fas",
+    "iconName": "file"
+  },
+  {
+    "prefix": "fas",
+    "iconName": "file-pdf"
+  },
+  {
+    "prefix": "far",
+    "iconName": "folder"
+  },
+  {
+    "prefix": "fas",
+    "iconName": "download"
+  },
+  {
+    "prefix": "fas",
+    "iconName": "expand"
+  },
+  {
+    "prefix": "far",
+    "iconName": "check-square"
+  },
+  {
+    "prefix": "fas",
+    "iconName": "edit"
+  },
+  {
+    "prefix": "fab",
+    "iconName": "github"
+  },
+  {
+    "prefix": "far",
+    "iconName": "square"
+  },
+  {
+    "prefix": "fab",
+    "iconName": "twitter"
+  },
+  {
+    "prefix": "fas",
+    "iconName": "search"
+  }
+]
