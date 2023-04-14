@@ -26,6 +26,9 @@ jobs:
     - name: Generate Antora UI
       run: gulp bundle
 
+    - name: Generates Pages
+      run: gulp preview:build
+
     - name: Deploy Antora UI to GitHub Pages
       if: github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v3
