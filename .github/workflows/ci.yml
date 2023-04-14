@@ -4,7 +4,9 @@ on:
   push:
     branches:
       - main
-
+  pull_request:
+    branches:
+        - main  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,6 +27,7 @@ jobs:
       run: gulp bundle
 
     - name: Deploy Antora UI to GitHub Pages
+      if: github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v4
       with:
         personal_token: ${{ secrets.GITHUB_TOKEN }}
