@@ -1,0 +1,35 @@
+name: Generate Antora UI with Gulp
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+        - main  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14.x'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Generate Antora UI
+      run: gulp bundle
+
+    - name: Deploy Antora UI to GitHub Pages
+      if: github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
+        
