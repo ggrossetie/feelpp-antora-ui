@@ -1,0 +1,8 @@
+= Feel++ Documentation
+:page-layout: home
+:feelpp: Feel++
+
+[.lead]
+{feelpp} is an Open-Source {cpp} library which allows to solve a large range of partial differential equations using Galerkin methods,
+e.g. finite element method, spectral element method, discontinuous Galerkin methods or reduced basis methods.
+Feel++ enables parallel computing in a seamless way and allows to solve large scale systems up to tens of thousands of cores.
