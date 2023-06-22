@@ -29,7 +29,6 @@
     var link = document.createElement('a')
     link.textContent = heading.textContent
     links[(link.href = '#' + heading.id)] = link
-    link.addEventListener('click', reclick.bind(null, link))
     var listItem = document.createElement('li')
     listItem.dataset.level = parseInt(heading.nodeName.slice(1), 10) - 1
     listItem.appendChild(link)
@@ -40,27 +39,10 @@
   var menu = sidebar.querySelector('.toc-menu')
   if (!menu) (menu = document.createElement('div')).className = 'toc-menu'
 
-  var title = sidebar.querySelector('.toc-title')
-  if (!title) (title = document.createElement('div')).className = 'toc-title'
+  var title = document.createElement('h3')
   title.textContent = sidebar.dataset.title || 'Contents'
-
-  var vbtnAndTitle = menu.querySelector('#vbtn-and-title')
-  if (!vbtnAndTitle) (vbtnAndTitle = document.createElement('span')).id = 'vbtn-and-title'
-
-  var vbtn = menu.querySelector('.nav-item-toggle')
-  if (!vbtn) (vbtn = document.createElement('button')).className = 'nav-item-toggle'
-
-  vbtnAndTitle.appendChild(vbtn)
-  vbtnAndTitle.appendChild(title)
-  menu.appendChild(vbtnAndTitle)
+  menu.appendChild(title)
   menu.appendChild(list)
-
-  vbtn.addEventListener('click', function () {
-    sidebar.classList.toggle('is-hidden-toc')
-    menu.classList.toggle('is-hidden-toc')
-    title.classList.toggle('is-hidden-toc')
-    vbtn.classList.toggle('is-hidden-toc')
-  })
 
   var startOfContent = !document.getElementById('toc') && article.querySelector('h1.page ~ :not(.is-before-toc)')
   if (startOfContent) {
@@ -128,12 +110,5 @@
 
   function getNumericStyleVal (el, prop) {
     return parseFloat(window.getComputedStyle(el)[prop])
-  }
-
-  function reclick (el, e) {
-    if (!e.isTrusted) return
-    window.setTimeout(function () {
-      el.click()
-    }, 0)
   }
 })()
