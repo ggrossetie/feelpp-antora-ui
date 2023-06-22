@@ -1,0 +1,114 @@
+= Math
+:stem: latexmath
+
+== Le Laplacien
+
+On s'intéresse dans cette section à l'_approximation élément fini conforme_ du problème suivant :
+
+.Problème : Formulation forte du Laplacien
+[.prob#prob:1]
+****
+On cherche stem:[u] telle que
+[[eq:64]]
+[stem]
+++++
+    \begin{split}
+      -\Delta u &= f \mbox{ dans } \Omega\\
+      u &= 0 \mbox{ sur } \partial \Omega
+\end{split}
+++++
+****
+
+[[sec:cadre-mathematique]]
+== Cadre Mathématique
+
+On suppose que stem:[f \in L^2(\Omega)].
+
+La formulation faible du problème <<prob:1>> est la suivante :
+
+.Formulation faible pour des conditions de Dirichlet homogènes
+[.prob#prob:2]
+****
+On cherche stem:[u \in H^1_0(\Omega)] telle que
+[stem]
+++++
+\label{eq:65}
+    \int_\Omega \nabla u \cdot \nabla v =  \int_\Omega f\, v,\quad \forall v \in H^1_0(\Omega)
+++++
+****
+
+[[sec:probleme-bien-pose]]
+== Problème bien posé
+
+Introduisons
+
+* stem:[V = H^1_0(\Omega)] doté de la norme
+stem:[\|\cdot\|_{1,\Omega}] telle que
+stem:[\|v\|_{1,\Omega} = (\|v\|^2_{0,\Omega} + \|\nabla v\|^2_{0,\Omega})^{1/2}]
+* la forme bilinéaire stem:[a \in \mathcal{L}(V \times V, \RR)]
+telle que stem:[a(u,v) = \int_\Omega
+\nabla u \cdot \nabla v ]
+* la forme linéaire stem:[\ell \in \mathcal{L}(V, \RR)] telle que
+stem:[l(v) = \int_\Omega   f \nabla v ]
+
+Le problème <<prob:2>> s’écrit sous forme abstraite
+
+.Problème:
+[.prob#prob:5]
+****
+On cherche stem:[u \in V] telle que
+[stem]
+++++
+    a(u, v) = \ell(v), \quad \forall v \in V
+++++
+****
+
+L’espace stem:[V] est un espace de Hilbert et les formes stem:[a] et stem:[\ell] sont continues sur stem:[V\times V] et stem:[V] respectivement.
+
+Il ne reste plus qu’à vérifier si le problème est bien posé (existence d’une solution unique).
+
+Pour cela, on démontre la _coercivité_ de la forme bilinéaire stem:[a] sur stem:[V \equiv H^1_0(\Omega)].
+
+Ceci se fait grâce au lemme suivant :
+
+.Lemma
+[.lem#lem:1]
+****
+Soit stem:[\Omega] un ouvert borné de stem:[\R{d}].
+Il existe une constante stem:[c_\Omega] (dépendente de stem:[\Omega] telle que
+[stem]
+++++
+    \forall v \in H^1_0(\Omega),\quad \|v\|_{0,\Omega} \le c_\Omega \|\nabla v\|_{0,\Omega}
+++++
+****
+
+[[rem:24]]
+NOTE: stem:[c_\Omega] est homogène à une longueur et peut être interprétée comme une mesure caractéristique de stem:[\Omega].
+
+Grâce à l’inégalité de Poincaré, on a le résultat suivant
+
+.Proposition
+[.prop#prop:7]
+****
+La forme bilinéaire stem:[a] du problème <<prob:2>> est _coercive_
+****
+
+.Preuve
+[.proof]
+****
+On note tout d’abord que par l’inégalité de Poincaré et la définition de
+stem:[\|\cdot\|_{1,\Omega}]
+[[eq:68]]
+[stem]
+++++
+      \|v\|^2_{1,\Omega} \le (1 + c^2_\Omega) \|\nabla v\|^2_{0,\Omega}
+++++
+On en déduit que
+[[eq:67]]
+[stem]
+++++
+\forall v \in H^1_0(\Omega),\quad a(v,v) = \|\nabla v\|^2_{0,\Omega} \ge \frac{1}{1+c^2_\Omega} \|v\|^2_{1,\Omega}
+++++
+
+Le Lemme de Lax-Milgram permet alors de conclure sur l’existence d’une solution unique pour le problème <<prob:2>>.
+****

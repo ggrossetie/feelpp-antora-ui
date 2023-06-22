@@ -1,4 +1,4 @@
-= Hardware and Software Requirements
+= Feel{pp} Documentation  Site UI
 Author Name
 :idprefix:
 :page-jupyter:
@@ -29,6 +29,13 @@ Vestibulum consectetur nec urna a luctus.
 Quisque pharetra tristique arcu fringilla dapibus.
 https://example.org[Curabitur,role=unresolved] ut massa aliquam, cursus enim et, accumsan lectus.
 Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate urna.
+
+== Pages
+
+- xref:home.adoc[]
+- xref:math.adoc[]
+- xref:pseudocode.adoc[]
+- xref:404.adoc[]
 
 == Labels for a Section
 

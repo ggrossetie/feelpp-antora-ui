@@ -1,7 +1,6 @@
 = Pseudocode
 :pseudocode-gh-url: https://github.com/SaswatPadhi/pseudocode.js
 
-
 The documentation embeds some algorithms written using {pseudocode-gh-url}[`pseudocode.js`] whose syntax is mostly compatible with latex package `algorithmic`.
 
 The documentation and in particular the grammar is {pseudocode-gh-url}#grammar[here].
