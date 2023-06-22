@@ -1,3 +1,8 @@
+:root {
+  --weight-light: 200;
+  --weight-normal: 400;
+}
+
 .view-source-button {
   color: var(--color-brand-gray4);
   display: inline-block;
@@ -56,7 +61,7 @@ a.copy-code-button:hover {
 
 .copy-code-button:hover::after {
   content: attr(data-title);
-  color: var("--color-brand-gray4");
+  color: var(--color-brand-gray4);
   font-size: var(--font-base);
   font-weight: var(--weight-light);
   line-height: 1;
@@ -101,7 +106,7 @@ a.copy-code-button:hover {
 
 .doc .listingblock code[data-lang] + .source-type-box .data-source {
   content: attr(data-lang);
-  color: var("--color-brand-gray1");
+  color: var(--color-brand-gray1);
   font-size: 0.75rem;
   font-weight: var(--weight-normal);
   letter-spacing: 1px;
