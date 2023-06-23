@@ -32,6 +32,11 @@
   visibility: visible;
 }
 
+.article.docs-home .nav {
+  /* no toolbar on home page */
+  top: 0;
+}
+
 .nav {
   background: var(--nav-background);
   position: relative;
