@@ -94,8 +94,8 @@ La forme bilinéaire stem:[a] du problème <<prob:2>> est _coercive_
 ****
 
 .Preuve
-[.proof]
-****
+[%collapsible.proof]
+====
 On note tout d’abord que par l’inégalité de Poincaré et la définition de
 stem:[\|\cdot\|_{1,\Omega}]
 [[eq:68]]
@@ -111,4 +111,4 @@ On en déduit que
 ++++
 
 Le Lemme de Lax-Milgram permet alors de conclure sur l’existence d’une solution unique pour le problème <<prob:2>>.
-****
+====

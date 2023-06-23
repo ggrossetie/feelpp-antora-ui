@@ -1147,3 +1147,60 @@ table.tableblock pre code.language-bash.hljs {
 .exampleblock.lem > .content .title {
   background-color: #f7a6cd;
 }
+
+details.proof {
+  background-color: transparent;
+  box-shadow: 1px 5px 5px 0 #e4e4e4;
+  border-radius: 0;
+  padding: 0;
+  margin-left: 0;
+}
+
+details.proof > .title {
+  border-left: 2px solid #41af46;
+  background-color: #8fd693;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+  padding-left: 0.65rem;
+  text-align: start;
+  margin-bottom: 0;
+  display: flex;
+}
+
+details.proof > .content {
+  padding-top: 0.75rem;
+  border-left: 2px solid;
+  padding-left: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-left-color: #41af46;
+}
+
+details.proof > summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+details.proof > summary::before,
+details.proof > summary::after {
+  display: none;
+}
+
+details.proof > summary::before {
+  display: block;
+  position: initial;
+  background: url(../img/octicons-16.svg#view-chevron-right) no-repeat center / 50% 50%;
+  width: 2em;
+  height: 2em;
+  border: none;
+}
+
+details.proof[open] > summary::before {
+  background: url(../img/octicons-16.svg#view-chevron-down) no-repeat center / 50% 50%;
+  width: 2em;
+  height: 2em;
+  border: none;
+  transform: translateX(0.25em) translateY(2px);
+}
