@@ -92,6 +92,22 @@ This item is only applicable to community edition.
 
 * This is the last item in the list.
 
+== Syntax Highlighting
+
+// https://www.open-mpi.org/doc/v4.0/man1/mpirun.1.php
+// mpirun [ options ] <program> [ <args> ]
+
+[source,mpirun]
+----
+mpirun --bind-to core -np 10 feelpp_toolbox_fluid --case "github:{path:toolboxes/fluid/TurekHron}"
+----
+
+[source, bash]
+.Run the CFD toolbox on the TurekHron benchmark
+----
+mpirun --bind-to core -np 10 feelpp_toolbox_fluid --case "github:{path:toolboxes/fluid/TurekHron}"
+----
+
 
 == Cu solet
 
