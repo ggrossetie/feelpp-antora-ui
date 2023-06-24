@@ -71,6 +71,18 @@ Pour cela, on démontre la _coercivité_ de la forme bilinéaire stem:[a] sur st
 
 Ceci se fait grâce au lemme suivant :
 
+.Theorem de toto
+[.thm#thm:1]
+****
+Soit stem:[V] un espace de Hilbert et stem:[a \in \mathcal{L}(V \times V, \RR)] une forme bilinéaire continue et _coercive_ sur stem:[V]. Alors, pour toute forme linéaire continue stem:[\ell \in \mathcal{L}(V, \RR)], le problème est bien posé
+****
+
+.Definition de toto
+[.def#def:1]
+****
+Une forme bilinéaire stem:[a \in \mathcal{L}(V \times V, \RR)] est _coercive_ sur stem:[V] s’il existe une constante stem:[\alpha > 0].
+****
+
 .Lemma
 [.lem#lem:1]
 ****
