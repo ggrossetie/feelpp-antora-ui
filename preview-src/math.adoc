@@ -71,6 +71,18 @@ Pour cela, on démontre la _coercivité_ de la forme bilinéaire stem:[a] sur st
 
 Ceci se fait grâce au lemme suivant :
 
+.Exercise: toto
+[.exer#exer:1]
+****
+this is an exercise.
+****
+
+.Example: Théorème de Lax-Milgram
+[.examp#examp:1]
+****
+this is an example.
+****
+
 .Theorem de toto
 [.thm#thm:1]
 ****
