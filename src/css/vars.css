@@ -131,8 +131,8 @@
   --important-border-color: rgba(255, 215, 0, 1);
   --important-on-color: rgba(255, 140, 0, 1);
   --note-color: #e0ffff;
-  --note-background: rgba(224, 255, 255, 1);  /* LightCyan */;
-  --note-border-color: #00ced1;  /* darkturquoise */;
+  --note-background: rgba(224, 255, 255, 1);
+  --note-border-color: #00ced1;
   --note-on-color: var(--color-black);
   --tip-color: #41af46;
   --tip-background: rgba(240, 255, 240, 1);
