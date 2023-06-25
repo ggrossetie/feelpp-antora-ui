@@ -412,23 +412,23 @@
 }
 
 .doc .admonitionblock.caution {
-  border-left-color: var(--caution-color);
+  border-left-color: var(--caution-border-color);
 }
 
 .doc .admonitionblock.important {
-  border-left-color: var(--important-color);
+  border-left-color: var(--important-border-color);
 }
 
 .doc .admonitionblock.tip {
-  border-left-color: var(--tip-color);
+  border-left-color: var(--tip-border-color);
 }
 
 .doc .admonitionblock.note {
-  border-left-color: var(--note-color);
+  border-left-color: var(--note-border-color);
 }
 
 .doc .admonitionblock.warning {
-  border-left-color: var(--warning-color);
+  border-left-color: var(--warning-border-color);
 }
 
 .doc .admonitionblock .icon i {
