@@ -83,21 +83,3 @@
 .doc .grid ul a {
   font-weight: var(--body-font-weight-bold);
 }
-
-.latest-news {
-  padding-top: 2.5em;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 3em;
-  gap: 2em;
-}
-
-.twitter-timeline {
-  display: block;
-}
-
-.twitter-timeline-container {
-  max-width: 100%;
-  width: 420px;
-  height: 500px;
-}
