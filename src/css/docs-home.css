@@ -93,16 +93,58 @@ body.docs-home article.doc {
 body.docs-home .actions {
   display: flex;
   gap: 1em;
+  flex-wrap: wrap;
 }
 
 body.docs-home .button.primary {
   color: white;
-  background-color: hsl(344deg 60% 49.02%);
-  border-color: hsl(344 60% 35% / 1);
+  background-color: var(--color-brand-accent);
+  border-color: hsl(var(--color-brand-accent-hue) var(--color-brand-accent-sat) 35%);
 }
 
 body.docs-home .button.secondary {
   background-color: var(--color-smoke-50);
   color: var(--color-jet-70);
   border-color: var(--color-smoke-90);
+}
+
+body.docs-home .button.overview {
+  margin-right: 1em;
+}
+
+body.docs-home .button.join-chat {
+  border: none;
+  padding-left: 0;
+  text-decoration: underline;
+  display: flex;
+  gap: 0.25em;
+  align-items: center;
+  color: black;
+}
+
+body.docs-home .button.join-chat::before {
+  background-image: url("../img/slack-icon.svg");
+  content: "";
+  height: 1.25em;
+  width: 1.25em;
+  background-size: contain;
+  filter: invert(1) brightness(0.15);
+}
+
+.latest-news {
+  padding-top: 2.5em;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3em;
+  gap: 2em;
+}
+
+.twitter-timeline {
+  display: block;
+}
+
+.twitter-timeline-container {
+  max-width: 100%;
+  width: 420px;
+  height: 500px;
 }
