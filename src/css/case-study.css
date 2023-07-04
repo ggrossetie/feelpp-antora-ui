@@ -1,0 +1,65 @@
+.docs-case-study .cases,
+.docs-case-study .benchmarks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.docs-case-study .cases .case,
+.docs-case-study .benchmarks .benchmark {
+  max-width: 270px;
+  display: flex;
+}
+
+.docs-case-study .page-card:hover,
+.docs-case-study .page-card:focus {
+  box-shadow: 0 6px 12px 1px #104d92ad;
+  text-decoration: none;
+}
+
+.docs-case-study .page-card {
+  box-shadow: 0 3px 6px 1px #e0e0e0;
+  padding: 1.5em 1em 1em;
+  display: flex;
+  flex-direction: column;
+  color: initial;
+  border-radius: 0.5em;
+}
+
+.docs-case-study .page-card-illustration {
+  height: 150px;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.docs-case-study .page-card-illustration > img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.25em;
+}
+
+.docs-case-study .page-card .page-card-body {
+  border-top: 1px solid #e1e1e1;
+  margin-top: 1rem;
+  padding-bottom: 0.75rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.docs-case-study .page-card .page-card-body p {
+  font-size: 0.9em;
+  color: #56595c;
+}
+
+.docs-case-study .page-card .page-card-body h4 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
