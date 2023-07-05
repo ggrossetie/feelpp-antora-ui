@@ -1,0 +1,2 @@
+= Computational Fluid Mechanics
+:page-layout: case-study
