@@ -6,8 +6,8 @@ The documentation embeds some algorithms written using `pseudocode.js` whose syn
 The documentation and in particular the grammar is https://github.com/SaswatPadhi/pseudocode.js#grammar[here].
 
 .Example of the pseudocode for the quicksort algorithm rendered by `pseudocode.js`
-====
-++++
+[.pseudocode]
+....
 <pre id="quicksort" style="display:hidden;">
     % This quicksort algorithm is extracted from Chapter 7, Introduction to Algorithms (3rd edition)
     \begin{algorithm}
@@ -35,27 +35,14 @@ The documentation and in particular the grammar is https://github.com/SaswatPadh
     \end{algorithmic}
     \end{algorithm}
     </pre>
-++++
-====
+....
 
-[IMPORTANT]
-====
-In order to display it properly you have to add the following line at the top of the asciidoc file
-.antora attribute page-pseudocode is an array of id of pseudocodes
-----
-:page-pseudocode: ["quicksort"]
-----
+IMPORTANT: In order to display it properly you have to use `[.pseudocode]` on a literal block.
 
-If you have several pseudo-codes in a page e.g. `code1, code2, code3`, you have to list them all
-----
-:page-pseudocode: ["code1","code2","code3"]
-----
-====
-
-.Original code in asciidoc
-====
-----
-++++
+.Original code in AsciiDoc to produce the previous example
+-----
+[.pseudocode]
+....
 <pre id="quicksort" style="display:hidden;">
     % This quicksort algorithm is extracted from Chapter 7, Introduction to Algorithms (3rd edition)
     \begin{algorithm}
@@ -83,7 +70,7 @@ If you have several pseudo-codes in a page e.g. `code1, code2, code3`, you have 
     \end{algorithmic}
     \end{algorithm}
     </pre>
-++++
+....
 ----
-====
+
 
