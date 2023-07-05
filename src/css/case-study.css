@@ -1,5 +1,6 @@
 .docs-case-study .cases,
-.docs-case-study .benchmarks {
+.docs-case-study .benchmarks,
+.docs-case-study .toolboxes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -11,6 +12,11 @@
 .docs-case-study .cases .case,
 .docs-case-study .benchmarks .benchmark {
   max-width: 270px;
+  display: flex;
+}
+
+.docs-case-study .toolboxes .toolbox {
+  max-width: 540px;
   display: flex;
 }
 
