@@ -76,5 +76,8 @@
     "lint:js": "eslint gulpfile.js \"gulp.d/**/*.js\" \"src/{helpers,js}/**/*.js\"",
     "build": "npm run generate-fontawesome-icon-defs && gulp bundle",
     "generate-fontawesome-icon-defs": "node tasks/generate-fontawesome-icon-defs.js"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
   }
 }
