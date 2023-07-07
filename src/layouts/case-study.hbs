@@ -22,22 +22,26 @@
         {{#with @root.page.title}}
           <h1 class="page">{{{this}}}</h1>
         {{/with}}
-        {{#if (get-benchmarks @root.page)}}
-        <h2>Benchmarks</h2>
-        <div class="benchmarks">
-          {{#each (get-benchmarks @root.page)}}
-            <div class="benchmark">{{> page-card this}}</div>
-          {{/each}}
-        </div>
-        {{/if}}
-        {{#if (get-cases @root.page)}}
-        <h2>Cases</h2>
-        <div class="cases">
-          {{#each (get-cases @root.page)}}
-            <div class="case">{{> page-card this}}</div>
-          {{/each}}
-        </div>
-        {{/if}}
+        {{#with (get-benchmarks @root.page)}}
+          {{#if this.length}}
+          <h2>Benchmarks</h2>
+          <div class="benchmarks">
+            {{#each this}}
+              <div class="benchmark">{{> page-card this}}</div>
+            {{/each}}
+          </div>
+          {{/if}}
+        {{/with}}
+        {{#with (get-cases @root.page)}}
+          {{#if this.length}}
+          <h2>Cases</h2>
+          <div class="cases">
+            {{#each this}}
+              <div class="case">{{> page-card this}}</div>
+            {{/each}}
+          </div>
+          {{/if}}
+        {{/with}}
       </article>
     </div>
   </main>

@@ -2,22 +2,49 @@
 .docs-case-study .benchmarks,
 .docs-case-study .toolboxes {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  gap: 2em;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  justify-content: space-between;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  gap: 5em;
 }
 
 .docs-case-study .cases .case,
 .docs-case-study .benchmarks .benchmark {
-  max-width: 270px;
+  flex-basis: calc(25% - 10em);
+  flex-grow: 1;
   display: flex;
+  align-items: stretch;
 }
 
 .docs-case-study .toolboxes .toolbox {
-  max-width: 540px;
+  flex-basis: calc(33.33% - 10em);
+  flex-grow: 1;
   display: flex;
+  align-items: stretch;
+}
+
+/* Media query for small screens */
+@media (max-width: 767px) {
+  .docs-case-study .cases .case,
+  .docs-case-study .benchmarks .benchmark,
+  .docs-case-study .toolboxes .toolbox {
+    flex-basis: calc(50% - 5em);
+  }
+}
+
+/* Media query for large screens */
+@media (min-width: 768px) {
+  .docs-case-study .cases .case,
+  .docs-case-study .benchmarks .benchmark {
+    flex-basis: calc(25% - 5em);
+  }
+
+  .docs-case-study .toolboxes .toolbox {
+    flex-basis: calc(33.33% - 5em);
+    min-width: 200px;
+    max-width: 400px;
+  }
 }
 
 .docs-case-study .page-card:hover,
