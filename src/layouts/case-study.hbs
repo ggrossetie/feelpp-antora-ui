@@ -22,7 +22,7 @@
         {{#with @root.page.title}}
           <h1 class="page">{{{this}}}</h1>
         {{/with}}
-        {{#with (get-benchmarks @root.page)}}
+        {{#with (get-page-cards @root.page 'benchmark' true)}}
           {{#if this.length}}
           <h2>Benchmarks</h2>
           <div class="benchmarks">
@@ -32,7 +32,7 @@
           </div>
           {{/if}}
         {{/with}}
-        {{#with (get-cases @root.page)}}
+        {{#with (get-page-cards @root.page 'case' true)}}
           {{#if this.length}}
           <h2>Cases</h2>
           <div class="cases">
