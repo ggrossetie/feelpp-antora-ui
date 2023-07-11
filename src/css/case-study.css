@@ -1,6 +1,7 @@
 .docs-case-study .cases,
 .docs-case-study .benchmarks,
-.docs-case-study .toolboxes {
+.docs-case-study .toolboxes,
+.docs-case-study .manuals {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -11,7 +12,8 @@
 
 .docs-case-study .cases .case,
 .docs-case-study .benchmarks .benchmark,
-.docs-case-study .toolboxes .toolbox {
+.docs-case-study .toolboxes .toolbox,
+.docs-case-study .manuals .manual {
   display: flex;
   flex: 1 calc(33.33% - 5em);
   max-width: 500px;
@@ -21,7 +23,8 @@
 @media (max-width: 767px) {
   .docs-case-study .cases .case,
   .docs-case-study .benchmarks .benchmark,
-  .docs-case-study .toolboxes .toolbox {
+  .docs-case-study .toolboxes .toolbox,
+  .docs-case-study .manuals .manual {
     flex: 1 250px;
   }
 }
@@ -30,7 +33,8 @@
 @media (min-width: 768px) {
   .docs-case-study .cases .case,
   .docs-case-study .benchmarks .benchmark,
-  .docs-case-study .toolboxes .toolbox {
+  .docs-case-study .toolboxes .toolbox,
+  .docs-case-study .manuals .manual {
     min-width: 250px;
   }
 }

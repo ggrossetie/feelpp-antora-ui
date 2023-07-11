@@ -1,0 +1,35 @@
+site:
+  title: Feel++ Project
+  url: https://feelpp.github.io/antora-ui
+  start_page: antora-ui::index.adoc
+content:
+  sources:
+  - url: .
+    branches: HEAD
+    start_path: docs
+ui:
+  bundle:
+    url: build/ui-bundle.zip
+    snapshot: true
+output:
+  clean: true
+  dir: public
+antora:
+  extensions:
+  - '@antora/collector-extension'
+asciidoc:
+  attributes:
+    project_name: Feel++ Project
+    project_version: 2.0.2
+    numbered: true
+    allow-uri-read: true
+    hide-uri-scheme: true
+    feelpp: Feel++
+    angiotk: AngioTK
+    4fastsim: 4FastSim
+    stem: latexmath
+    hemotumpp: Hemotum++
+    eye2brain: Eye2Brain
+    swimmer: Swimmer
+    python: Python
+    cpp: C++
