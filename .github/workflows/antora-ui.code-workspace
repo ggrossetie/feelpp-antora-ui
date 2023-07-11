@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../book.feelpp.org"
+		},
+		{
+			"path": "../../../../Feelpp/feelpp"
+		},
+		{
+			"name": "homebrew-feelpp",
+			"path": "../../../../homebrew-feelpp"
+		},
+		{
+			"path": "../../../../../Cemosis Dropbox/Christophe Prud'homme/Devel/cours/rbm"
+		},
+		{
+			"name": "hidalgo2-urban-building",
+			"path": "../../../../hidalgo2-urban-building"
+		}
+	],
+	"settings": {}
+}
