@@ -50,6 +50,7 @@
     "gulp-vinyl-zip": "~2.2",
     "handlebars": "~4.7",
     "handlebars-utils": "^1.0.6",
+    "http-server": "^14.1.1",
     "highlight.js": "9.18.3",
     "js-yaml": "~3.13",
     "merge-stream": "~2.0",
@@ -75,9 +76,20 @@
     "lint:css": "stylelint \"src/css/**/*.css\"",
     "lint:js": "eslint gulpfile.js \"gulp.d/**/*.js\" \"src/{helpers,js}/**/*.js\"",
     "build": "npm run generate-fontawesome-icon-defs && gulp bundle",
+    "antora": "npx antora site.yml --stacktrace",
+    "serve": "http-server public",
     "generate-fontawesome-icon-defs": "node tasks/generate-fontawesome-icon-defs.js"
   },
   "dependencies": {
-    "gulp-cli": "^2.3.0"
+    "gulp-cli": "^2.3.0",
+    "@antora/cli": "^3.1",
+    "@antora/collector-extension": "^1.0.0-alpha.3",
+    "@antora/site-generator-default": "^3.1",
+    "@asciidoctor/core": "^2.2.6",
+    "asciidoctor": "^2.2.6",
+    "asciidoctor-jupyter": "^0.5.0",
+    "asciidoctor-kroki": "^0.17.0",
+    "handlebars": "^4.7.7",
+    "handlebars-utils": "^1.0.6"
   }
 }
