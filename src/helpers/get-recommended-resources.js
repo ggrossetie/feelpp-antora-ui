@@ -54,7 +54,7 @@ module.exports = ({ data: { root } }) => {
   // feelpp-project
   const projectPage = contentCatalog.getById({
     component: 'feelpp-project',
-    version: 'latest',
+    version: '',
     family: 'page',
     module: 'ROOT',
     relative: 'index.adoc',
