@@ -26,8 +26,8 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Generate Antora UI
-      run: gulp bundle
+    - name: Generate Antora Docs
+      run: npm run antora
 
     - name: Generates Pages
       run: gulp preview:build
