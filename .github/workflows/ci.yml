@@ -27,7 +27,7 @@ jobs:
       run: npm install
 
     - name: Generate Antora Docs
-      run: npm run start
+      run: gulp bundle
 
     - name: Generates Pages
       run: gulp preview:build
