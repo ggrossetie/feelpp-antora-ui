@@ -1,6 +1,6 @@
 * xref:style-guide.adoc[]
 ** xref:inline-text-styles.adoc[]
-** xref:math.adoc[]
+** xref:admonition-styles.adoc[]
 ** xref:mpirun.adoc[mpirun command]
 //** xref:plotly.adoc[]
 ** xref:pseudocode.adoc[]
