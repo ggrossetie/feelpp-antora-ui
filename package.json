@@ -15,6 +15,7 @@
   ],
   "devDependencies": {
     "@asciidoctor/core": "~2.2",
+    "@feelpp/asciidoctor-extensions": "^1.0.0-rc.6",
     "@fontsource/roboto": "~4.5",
     "@fontsource/roboto-mono": "~4.5",
     "@fortawesome/fontawesome-free": "~6.4",
@@ -50,8 +51,8 @@
     "gulp-vinyl-zip": "~2.2",
     "handlebars": "~4.7",
     "handlebars-utils": "^1.0.6",
-    "http-server": "^14.1.1",
     "highlight.js": "9.18.3",
+    "http-server": "^14.1.1",
     "js-yaml": "~3.13",
     "merge-stream": "~2.0",
     "postcss-calc": "~7.0",
@@ -81,7 +82,6 @@
     "generate-fontawesome-icon-defs": "node tasks/generate-fontawesome-icon-defs.js"
   },
   "dependencies": {
-    "gulp-cli": "^2.3.0",
     "@antora/cli": "^3.1",
     "@antora/collector-extension": "^1.0.0-alpha.3",
     "@antora/site-generator-default": "^3.1",
@@ -89,6 +89,7 @@
     "asciidoctor": "^2.2.6",
     "asciidoctor-jupyter": "^0.5.0",
     "asciidoctor-kroki": "^0.17.0",
+    "gulp-cli": "^2.3.0",
     "handlebars": "^4.7.7",
     "handlebars-utils": "^1.0.6"
   }

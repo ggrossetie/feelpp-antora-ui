@@ -1,0 +1,44 @@
+= Source Highlighting
+
+Source highlighting is applied to text that’s assigned the source block style (either explicitly or implicitly) and a source language. The source language is defined either on the block or inherited from the source-language document attribute.
+Source Highlighting is provided by https://highlightjs.org/[Highlight.js].
+
+.Source block with source highlighting
+[,adoc]
+-----
+[#hello,python]
+----
+print('Hello World')
+----
+-----
+
+Here's the result:
+
+[,python]
+----
+print('Hello World')
+----
+
+In addition, `mpirun` commands are also highlighted using a custom syntax highlighter:
+
+[,adoc]
+-----
+[,mpirun]
+----
+mpirun -np 4 feelpp_toolbox_electric \
+  --case "github:{path:toolboxes/electric/cvg}" \
+  --case.config-file 2d.cfg
+----
+-----
+
+Here's the result:
+
+[,mpirun]
+----
+mpirun -np 4 feelpp_toolbox_electric \
+  --case "github:{path:toolboxes/electric/cvg}" \
+  --case.config-file 2d.cfg
+----
+
+NOTE: As you can see, the command `mpirun` and the command line options are highlighted.
+Furthermore, the `--case` and `--case.config` options are extracted into two separate code blocks to facilitate copy and paste.

@@ -34,3 +34,5 @@ asciidoc:
     swimmer: Swimmer
     python: Python
     cpp: C++
+  extensions:
+    - '@feelpp/asciidoctor-extensions'

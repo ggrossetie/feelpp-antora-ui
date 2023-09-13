@@ -14,7 +14,7 @@ These elements include:
 
 * xref:inline-text-styles.adoc[Inline text emphasis]
 * xref:admonition-styles.adoc[Admonitions]
-* xref:mpirun.adoc[mpirun Syntax Highlighting]
+* xref:source-highlighting.adoc[]
 //** xref:plotly.adoc[]
 * xref:pseudocode.adoc[]
 * xref:copy-to-clipboard.adoc[]

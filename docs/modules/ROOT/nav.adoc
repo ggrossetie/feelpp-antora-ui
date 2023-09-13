@@ -1,7 +1,7 @@
 * xref:style-guide.adoc[]
 ** xref:inline-text-styles.adoc[]
 ** xref:admonition-styles.adoc[]
-** xref:mpirun.adoc[mpirun command]
+** xref:source-highlighting.adoc[]
 //** xref:plotly.adoc[]
 ** xref:pseudocode.adoc[]
 ** xref:copy-to-clipboard.adoc[]
