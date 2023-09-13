@@ -1,5 +1,5 @@
 name: feelpp-antora-ui
-title: Feel++ Antora UI
+title: Antora Feel++ UI
 version: ~
 nav:
 - modules/ROOT/nav.adoc
