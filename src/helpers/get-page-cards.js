@@ -9,7 +9,7 @@ module.exports = (parentPage, tag, withinParentModule = true, { data: { root } }
       src.version !== parentPage.componentVersion.version) return
     const pageTags = asciidoc.attributes['page-tags']
     return pageTags && pageTags.split(',').map((v) => v.trim()).includes(tag)
-  })
+  }).sort((a, b) => (a.title || '').localeCompare((b.title || '')))
   if (pages && pages.length > 0) {
     while (pages.length % 3 !== 0) {
       pages.push({
