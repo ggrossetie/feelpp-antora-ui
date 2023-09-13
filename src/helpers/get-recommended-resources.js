@@ -131,16 +131,5 @@ module.exports = ({ data: { root } }) => {
       url: femIndexPage.pub.url,
     })
   }
-  // in case project page is available but not the other ones like user manual or toolboxes manual,
-  // then we are un a standalone project, we provide a link to the documentation of feelpp
-  if ((projectPage && !userManualPage && !toolboxesManualPage) ||
-      (!projectPage && !userManualPage && !toolboxesManualPage)) {
-    result.push({
-      title: 'Documentation',
-      color: 'magenta',
-      id: 'feelpp-docs',
-      url: 'https://docs.feelpp.org',
-    })
-  }
   return result
 }
