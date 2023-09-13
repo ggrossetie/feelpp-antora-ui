@@ -171,6 +171,24 @@ Here's the result:
 Soit stem:[V] un espace de Hilbert et stem:[a \in \mathcal{L}(V \times V, \RR)] une forme bilinéaire continue et _coercive_ sur stem:[V]. Alors, pour toute forme linéaire continue stem:[\ell \in \mathcal{L}(V, \RR)], le problème est bien posé
 ****
 
+.Corollaire admonition syntax
+[source,adoc]
+----
+.Corollaire de toto
+[.cor#cor:1]
+****
+Soit stem:[V] un espace de Hilbert et stem:[a \in \mathcal{L}(V \times V, \RR)] une forme bilinéaire continue et _coercive_ sur stem:[V]. Alors, pour toute forme linéaire continue stem:[\ell \in \mathcal{L}(V, \RR)], le problème est bien posé
+****
+----
+
+Here's the result:
+
+.Corollary de toto
+[.cor#cor:1]
+****
+Soit stem:[V] un espace de Hilbert et stem:[a \in \mathcal{L}(V \times V, \RR)] une forme bilinéaire continue et _coercive_ sur stem:[V]. Alors, pour toute forme linéaire continue stem:[\ell \in \mathcal{L}(V, \RR)], le problème est bien posé
+****
+
 .Definition admonition syntax
 [source,adoc]
 ----

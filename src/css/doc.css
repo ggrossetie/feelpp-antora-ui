@@ -1069,6 +1069,8 @@ table.tableblock pre code.language-bash.hljs {
 .exampleblock.examp,
 .sidebarblock.thm,
 .exampleblock.thm,
+.sidebarblock.cor,
+.exampleblock.cor,
 .sidebarblock.def,
 .exampleblock.def,
 .sidebarblock.prop,
@@ -1091,6 +1093,8 @@ table.tableblock pre code.language-bash.hljs {
 .exampleblock.examp > .content,
 .sidebarblock.thm > .content,
 .exampleblock.thm > .content,
+.sidebarblock.cor > .content,
+.exampleblock.cor > .content,
 .sidebarblock.def > .content,
 .exampleblock.def > .content,
 .sidebarblock.prop > .content,
@@ -1119,6 +1123,11 @@ table.tableblock pre code.language-bash.hljs {
 .sidebarblock.thm > .content,
 .exampleblock.thm > .content {
   border-left-color: #2196f3;
+}
+
+.sidebarblock.cor > .content,
+.exampleblock.cor > .content {
+  border-left-color: #4da6ff;
 }
 
 .sidebarblock.def > .content,
@@ -1152,6 +1161,8 @@ table.tableblock pre code.language-bash.hljs {
 .exampleblock.examp > .content .title,
 .sidebarblock.thm > .content .title,
 .exampleblock.thm > .content .title,
+.sidebarblock.cor > .content .title,
+.exampleblock.cor > .content .title,
 .sidebarblock.def > .content .title,
 .exampleblock.def > .content .title,
 .sidebarblock.prop > .content .title,
@@ -1184,6 +1195,11 @@ table.tableblock pre code.language-bash.hljs {
 .sidebarblock.thm > .content .title,
 .exampleblock.thm > .content .title {
   background-color: #f0f8ff;
+}
+
+.sidebarblock.cor > .content .title,
+.exampleblock.cor > .content .title {
+  background-color: #f7fcff;
 }
 
 .sidebarblock.def > .content .title,
