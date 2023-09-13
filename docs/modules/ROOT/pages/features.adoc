@@ -1,0 +1,11 @@
+= Features
+
+{cemosis} and {feelpp} use some extensions to improve the writing experience:
+
+- xref:pseudocode.adoc[]
+//- xref:plotly.adoc[]
+- xref:math.adoc[]
+- xref:mpirun.adoc[mpirun command]
+
+
+

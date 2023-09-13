@@ -1,6 +1,7 @@
-* xref:index.adoc[]
-* Features
+* xref:style-guide.adoc[]
+** xref:inline-text-styles.adoc[]
 ** xref:math.adoc[]
-** xref:mpirun.adoc[mpirun Syntax Highlighting]
+** xref:mpirun.adoc[mpirun command]
 //** xref:plotly.adoc[]
 ** xref:pseudocode.adoc[]
+** xref:copy-to-clipboard.adoc[]
