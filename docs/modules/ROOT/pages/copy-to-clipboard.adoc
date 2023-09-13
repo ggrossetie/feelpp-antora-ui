@@ -1,4 +1,4 @@
-= Copy to clipboard
+= Copy to Clipboard
 
 This page describes the copy to clipboard feature added to source blocks when using the default UI.
 

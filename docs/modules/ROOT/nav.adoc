@@ -2,6 +2,7 @@
 ** xref:inline-text-styles.adoc[]
 ** xref:admonition-styles.adoc[]
 ** xref:source-highlighting.adoc[]
+** xref:copy-to-clipboard.adoc[]
 //** xref:plotly.adoc[]
 ** xref:pseudocode.adoc[]
-** xref:copy-to-clipboard.adoc[]
+
