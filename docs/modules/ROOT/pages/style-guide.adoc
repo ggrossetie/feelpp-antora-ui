@@ -5,10 +5,6 @@ When creating a UI theme for Antora, there are certain elements in the UI that r
 This list includes elements in the shell (i.e., frame) and in the document content.
 This document identifies these UI elements.
 
-//== UI Shell
-
-// TODO
-
 == Document Content
 
 The HTML in the main content area is generated from AsciiDoc using Asciidoctor.
@@ -18,6 +14,10 @@ These elements include:
 
 * xref:inline-text-styles.adoc[Inline text emphasis]
 * xref:admonition-styles.adoc[Admonitions]
-* xref:list-styles.adoc[Lists]
-* xref:sidebar-styles.adoc[Sidebars]
-* xref:ui-macro-styles.adoc[Button, keybinding, and menu UI macros]
+* xref:source-highlighting.adoc[]
+* xref:copy-to-clipboard.adoc[]
+//** xref:plotly.adoc[]
+* xref:pseudocode.adoc[]
+//* xref:list-styles.adoc[Lists]
+//* xref:sidebar-styles.adoc[Sidebars]
+//* xref:ui-macro-styles.adoc[Button, keybinding, and menu UI macros]

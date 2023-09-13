@@ -1,5 +1,8 @@
-name: antora-ui
-title: Feel++ Antora UI
+name: feelpp-antora-ui
+title: Antora Feel++ UI
 version: ~
 nav:
 - modules/ROOT/nav.adoc
+asciidoc:
+  attributes:
+    url-asciidoc: https://docs.asciidoctor.org/asciidoc/latest

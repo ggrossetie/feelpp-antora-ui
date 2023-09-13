@@ -1,7 +1,7 @@
 site:
   title: Feel++ Project
   url: https://feelpp.github.io/antora-ui
-  start_page: antora-ui::index.adoc
+  start_page: feelpp-antora-ui::index.adoc
 content:
   sources:
   - url: .
@@ -19,6 +19,8 @@ antora:
   - '@antora/collector-extension'
 asciidoc:
   attributes:
+    page-pagination: ''
+    cemosis: Cemosis
     project_name: Feel++ Project
     project_version: 2.0.2
     numbered: true
@@ -33,3 +35,5 @@ asciidoc:
     swimmer: Swimmer
     python: Python
     cpp: C++
+  extensions:
+    - '@feelpp/asciidoctor-extensions'
