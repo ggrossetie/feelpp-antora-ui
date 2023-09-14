@@ -1152,6 +1152,7 @@ table.tableblock pre code.language-bash.hljs {
 .exampleblock.nota > .content {
   border-left-color: #536dfe;
 }
+
 .sidebarblock.prop > .content,
 .exampleblock.prop > .content {
   border-left-color: #ffc107;
