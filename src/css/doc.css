@@ -1071,8 +1071,12 @@ table.tableblock pre code.language-bash.hljs {
 .exampleblock.thm,
 .sidebarblock.cor,
 .exampleblock.cor,
+.sidebarblock.nota,
+.exampleblock.nota,
 .sidebarblock.def,
 .exampleblock.def,
+.sidebarblock.remind,
+.exampleblock.remind,
 .sidebarblock.prop,
 .exampleblock.prop,
 .sidebarblock.proof,
@@ -1097,6 +1101,10 @@ table.tableblock pre code.language-bash.hljs {
 .exampleblock.cor > .content,
 .sidebarblock.def > .content,
 .exampleblock.def > .content,
+.sidebarblock.nota > .content,
+.exampleblock.nota > .content,
+.sidebarblock.remind > .content,
+.exampleblock.remind > .content,
 .sidebarblock.prop > .content,
 .exampleblock.prop > .content,
 .sidebarblock.proof > .content,
@@ -1133,6 +1141,16 @@ table.tableblock pre code.language-bash.hljs {
 .sidebarblock.def > .content,
 .exampleblock.def > .content {
   border-left-color: #673ab7;
+}
+
+.sidebarblock.remind > .content,
+.exampleblock.remind > .content {
+  border-left-color: #4caf50;
+}
+
+.sidebarblock.nota > .content,
+.exampleblock.nota > .content {
+  border-left-color: #536dfe;
 }
 
 .sidebarblock.prop > .content,
@@ -1205,6 +1223,16 @@ table.tableblock pre code.language-bash.hljs {
 .sidebarblock.def > .content .title,
 .exampleblock.def > .content .title {
   background-color: #e6e6fa;
+}
+
+.sidebarblock.nota > .content .title,
+.exampleblock.nota > .content .title {
+  background-color: #e0e0ff;
+}
+
+.sidebarblock.remind > .content .title,
+.exampleblock.remind > .content .title {
+  background-color: #e6f2e6;
 }
 
 .sidebarblock.prop > .content .title,

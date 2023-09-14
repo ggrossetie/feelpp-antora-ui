@@ -207,6 +207,43 @@ Here's the result:
 Une forme bilinéaire stem:[a \in \mathcal{L}(V \times V, \RR)] est _coercive_ sur stem:[V] s’il existe une constante stem:[\alpha > 0].
 ****
 
+
+.Reminder: admonition syntax
+[source,adoc]
+----
+.Reminder de Perlimpinpin
+[.remind#remind:1]
+****
+Une forme bilinéaire stem:[a \in \mathcal{L}(V \times V, \RR)] est _coercive_ sur stem:[V] s’il existe une constante stem:[\alpha > 0].
+****
+----
+
+Here's the result:
+
+.Reminder de Perlimpinpin
+[.remind#remind:1]
+****
+Une forme bilinéaire stem:[a \in \mathcal{L}(V \times V, \RR)] est _coercive_ sur stem:[V] s’il existe une constante stem:[\alpha > 0].
+****
+
+.Notation admonition syntax
+[source,adoc]
+----
+.Botation de Perlimpinpin
+[.nota#nota:1]
+****
+Une forme bilinéaire stem:[a \in \mathcal{L}(V \times V, \RR)] est _coercive_ sur stem:[V] s’il existe une constante stem:[\alpha > 0].
+****
+----
+
+Here's the result:
+
+.Notation de Perlimpinpin
+[.nota#nota:1]
+****
+Une forme bilinéaire stem:[a \in \mathcal{L}(V \times V, \RR)] est _coercive_ sur stem:[V] s’il existe une constante stem:[\alpha > 0].
+****
+
 .Proposal admonition syntax
 [source,adoc]
 ----
